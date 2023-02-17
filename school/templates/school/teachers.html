@@ -1,0 +1,21 @@
+{% extends 'school/base.html' %}
+
+{% block content %}
+<h1>Teachers</h1>
+<table class="table">
+    <td>Name</td>
+    <td>Course</td>
+    <td>Lesson</td>
+
+    {% for i in teachers %}
+        <tr>
+            <td>{{i.fullname}}</td>
+            <td>{{i.teacher_course}}</td>
+            <td>{{i.lesson}}</td>
+
+
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
